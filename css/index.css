@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+main{
+  border: 10px;
+  border-color: black;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo > img {
+  width: 50px;
+}
+
+@media(max-width:767px){
+  header{
+    display:flex;  
+    justify-content: center;
+    flex-direction: column; 
+  }
+  .logo{
+    display: flex;
+    justify-content: center;
+  }
+
+  main{
+    display:flex; 
+    flex-direction: column;
+  }
+
+  .fa-apple-alt{
+    display: flex;
+    justify-content: center;  
+  }
+
+  .fa-money-bill-wave{
+    display: flex;
+    justify-content: center;  
+  }
+
+  .fa-utensils{
+    display: flex;
+    justify-content: center;  
+  }
+
+  .menu{
+    display:none
+  }
+  .hamburger{
+    display: flex;
+    justify-content: right;
+    background-color: gray;
+  }
+
+}
+
+@media(min-width:768px)and (max-width:1024px){
+  main{
+    display:flex; 
+    flex-direction: column;
+    justify-content: center; 
+  }
+
+  header{
+    display:flex;   
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .menu{
+    display:none
+  }
+  .hamburger{
+    display: flex;
+    justify-content: right;
+    background-color: gray;
+  }
+
+  .fa-apple-alt{
+    display: flex;
+    justify-content: center;  
+  }
+
+  .fa-money-bill-wave{
+    display: flex;
+    justify-content: center;  
+  }
+
+  .fa-utensils{
+    display: flex;
+    justify-content: center;  
+  }
+}
+
+@media(min-width:1025px){
+  header{
+    display:flex;   
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .hamburger{
+    display:none 
+  }
+  .menu{
+    display:flex;  
+    flex-direction: row;
+    justify-content:space-around; 
+    background-color: gray; 
+  } 
+  main{
+    display:flex; 
+    justify-content: center;
+    justify-content:space-between;  
+  }
+  
+}
+
+.social{
+  display:flex;  
+  flex-direction: row;
+  justify-content:space-around; 
+}
+
